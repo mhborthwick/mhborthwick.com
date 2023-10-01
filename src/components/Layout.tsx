@@ -1,3 +1,5 @@
+import { Navigation } from "./Navigation";
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -5,7 +7,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <div style={{ border: "1px solid red" }}>
-      {/* Navigation */}
+      <Navigation />
       {children}
     </div>
   );
