@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
-type ProjectGridItemProps = {
+interface ProjectGridItemProps {
   project: {
     id: number;
     title: string;
     subtitle: string;
     description: string;
   };
-};
+}
 
 const projectGridTransitionVariants = {
   onInitial: {

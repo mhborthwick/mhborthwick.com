@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-type PageContainerProps = {
+interface PageContainerProps {
   children: React.ReactNode;
-};
+}
 
 const pageContainerTransitionVariants = {
   onInitial: {},
