@@ -5,14 +5,14 @@
       "title": "Project A",
       "subtitle": "This is the subtitle",
       "description": "This is the description",
-      "imgUrl": "/public/placeholder.jpeg"
+      "imgUrl": "/placeholder.jpeg"
     },
     {
       "id": 2,
       "title": "Project B",
       "subtitle": "This is the subtitle",
       "description": "This is the description",
-      "imgUrl": "/public/placeholder2.jpeg"
+      "imgUrl": "/placeholder2.jpeg"
     }
   ]  
 }
