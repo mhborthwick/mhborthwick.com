@@ -46,8 +46,12 @@ export function ProjectGridItem({ project }: ProjectGridItemProps) {
           }}
         ></motion.main>
       </a>
-      <div>{project.title}</div>
-      <div>{project.subtitle}</div>
+      <a href="#">
+        <div>{project.title}</div>
+      </a>
+      <a href="#">
+        <div>{project.subtitle}</div>
+      </a>
     </div>
   );
 }
