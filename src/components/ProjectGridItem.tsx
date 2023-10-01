@@ -6,6 +6,7 @@ interface ProjectGridItemProps {
     title: string;
     subtitle: string;
     description: string;
+    imgUrl: string;
   };
 }
 
@@ -33,15 +34,20 @@ const projectGridTransitionVariants = {
 export function ProjectGridItem({ project }: ProjectGridItemProps) {
   return (
     <div>
-      <motion.main
-        variants={projectGridTransitionVariants}
-        initial="onInitial"
-        animate="onAnimate"
-        exit="onExit"
-      >
-        <div>{project.title}</div>
-        <div>{project.subtitle}</div>
-      </motion.main>
+      <a href="#">
+        <motion.main
+          variants={projectGridTransitionVariants}
+          initial="onInitial"
+          animate="onAnimate"
+          exit="onExit"
+          className="w-full h-full bg-cover bg-center bg-no-repeat before:block before:content-[''] before:pt-[66.66%]"
+          style={{
+            backgroundImage: `url(${project.imgUrl})`,
+          }}
+        ></motion.main>
+      </a>
+      <div>{project.title}</div>
+      <div>{project.subtitle}</div>
     </div>
   );
 }
