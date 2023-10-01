@@ -6,7 +6,7 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div style={{ border: "1px solid red" }}>
+    <div className="mx-16 my-8">
       <Navigation />
       {children}
     </div>

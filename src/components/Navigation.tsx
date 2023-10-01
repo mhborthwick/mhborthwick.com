@@ -1,8 +1,8 @@
 export function Navigation() {
   return (
-    <header>
+    <header className="flex justify-between items-baseline">
       <a href="/">
-        <h1>Mike Borthwick</h1>
+        <h1 className="text-3xl font-bold underline">Mike Borthwick</h1>
         <p>Software Engineer \\ Portland, OR</p>
       </a>
       <nav>
