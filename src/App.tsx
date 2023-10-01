@@ -2,16 +2,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Home } from "./pages/Home";
 import { Other } from "./pages/Other";
+import { Layout } from "./components/Layout";
 
 function App() {
   return (
     <Router>
-      <div className="pt-20">
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/other" element={<Other />} />
         </Routes>
-      </div>
+      </Layout>
     </Router>
   );
 }
