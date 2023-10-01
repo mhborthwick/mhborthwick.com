@@ -3,5 +3,5 @@ interface ProjectGridProps {
 }
 
 export function ProjectGrid({ children }: ProjectGridProps) {
-  return <div>{children}</div>;
+  return <div className="grid grid-cols-2 gap-x-8 gap-y-12">{children}</div>;
 }

@@ -9,7 +9,6 @@ export function Home() {
           <ProjectGridItem key={p.id} project={p} />
         ))}
       </ProjectGrid>
-      <a href="/other">Other - Temp link for testing</a>
     </PageContainer>
   );
 }
