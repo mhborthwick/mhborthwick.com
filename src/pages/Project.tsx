@@ -1,14 +1,8 @@
 import { PageContainer, ProjectBody, ProjectHeading } from "../components";
+import { Project } from "../interfaces";
 
 interface ProjectProps {
-  project: {
-    id: number;
-    title: string;
-    subtitle: string;
-    description: string;
-    imgUrl: string;
-    pageUrl: string;
-  };
+  project: Project;
 }
 
 export function Project({ project }: ProjectProps) {

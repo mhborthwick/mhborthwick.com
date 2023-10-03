@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Other, Project } from "./pages";
+import { Home, Other, Project as ProjectPage } from "./pages";
 import { Layout } from "./components";
 import { projects } from "./assets/projects.json";
+import { Project } from "./interfaces";
 
-function getProjectById(id: number) {
+function getProjectById(id: number): Project {
   return projects.find((p) => p.id === id)!;
 }
 
@@ -16,7 +17,7 @@ function App() {
           <Route path="/other" element={<Other />} />
           <Route
             path="/projects/portfolio"
-            element={<Project project={getProjectById(1)} />}
+            element={<ProjectPage project={getProjectById(1)} />}
           />
         </Routes>
       </Layout>

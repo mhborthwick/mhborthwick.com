@@ -1,14 +1,8 @@
 import { PageContainer, ProjectGrid, ProjectGridItem } from "../components";
+import { Project } from "../interfaces";
 
 interface HomeProps {
-  projects: {
-    id: number;
-    title: string;
-    subtitle: string;
-    description: string;
-    imgUrl: string;
-    pageUrl: string;
-  }[];
+  projects: Project[];
 }
 
 export function Home({ projects }: HomeProps) {
