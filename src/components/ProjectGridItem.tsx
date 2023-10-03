@@ -30,7 +30,7 @@ export function ProjectGridItem({ project }: ProjectGridItemProps) {
   return (
     <div>
       <a href={project.pageUrl}>
-        <motion.main
+        <motion.div
           variants={projectGridTransitionVariants}
           initial="onInitial"
           animate="onAnimate"
@@ -39,7 +39,7 @@ export function ProjectGridItem({ project }: ProjectGridItemProps) {
           style={{
             backgroundImage: `url(${project.imgUrl})`,
           }}
-        ></motion.main>
+        ></motion.div>
       </a>
       <a href={project.pageUrl}>
         <div>{project.title}</div>

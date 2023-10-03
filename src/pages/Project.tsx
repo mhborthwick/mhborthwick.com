@@ -6,10 +6,9 @@ interface ProjectProps {
 }
 
 export function Project({ project }: ProjectProps) {
-  console.log(project);
   return (
     <PageContainer>
-      <ProjectHeading />
+      <ProjectHeading project={project} />
       <ProjectBody />
     </PageContainer>
   );
