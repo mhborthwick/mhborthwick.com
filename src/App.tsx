@@ -4,7 +4,7 @@ import { Layout } from "./components";
 import { projects } from "./assets/projects.json";
 
 function getProjectById(id: number) {
-  return projects.find((p) => p.id === id);
+  return projects.find((p) => p.id === id)!;
 }
 
 function App() {
