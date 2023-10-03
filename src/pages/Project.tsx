@@ -1,8 +1,8 @@
 import { PageContainer, ProjectBody, ProjectHeading } from "../components";
-import { Project } from "../interfaces";
+import { Project as ProjectInterface } from "../interfaces";
 
 interface ProjectProps {
-  project: Project;
+  project: ProjectInterface;
 }
 
 export function Project({ project }: ProjectProps) {
