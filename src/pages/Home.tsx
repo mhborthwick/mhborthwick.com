@@ -1,7 +1,17 @@
 import { PageContainer, ProjectGrid, ProjectGridItem } from "../components";
-import { projects } from "../assets/projects.json";
 
-export function Home() {
+interface HomeProps {
+  projects: {
+    id: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    imgUrl: string;
+    pageUrl: string;
+  }[];
+}
+
+export function Home({ projects }: HomeProps) {
   const reversed = [...projects].reverse();
   return (
     <PageContainer>

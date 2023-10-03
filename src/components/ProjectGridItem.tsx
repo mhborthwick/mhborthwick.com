@@ -7,6 +7,7 @@ interface ProjectGridItemProps {
     subtitle: string;
     description: string;
     imgUrl: string;
+    pageUrl: string;
   };
 }
 
@@ -34,7 +35,7 @@ const projectGridTransitionVariants = {
 export function ProjectGridItem({ project }: ProjectGridItemProps) {
   return (
     <div>
-      <a href="#">
+      <a href={project.pageUrl}>
         <motion.main
           variants={projectGridTransitionVariants}
           initial="onInitial"
@@ -46,10 +47,10 @@ export function ProjectGridItem({ project }: ProjectGridItemProps) {
           }}
         ></motion.main>
       </a>
-      <a href="#">
+      <a href={project.pageUrl}>
         <div>{project.title}</div>
       </a>
-      <a href="#">
+      <a href={project.pageUrl}>
         <div>{project.subtitle}</div>
       </a>
     </div>
