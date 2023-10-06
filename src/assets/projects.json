@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Project A",
       "subtitle": "This is the subtitle",
-      "description": "This is the description",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur ipsam ratione quas! Similique exercitationem commodi sed deserunt velit, suscipit quas, eveniet, nihil quaerat dicta incidunt reprehenderit a dolorum hic.",
       "imgUrl": "/placeholder.jpeg",
       "pageUrl": "/projects/portfolio"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "title": "Project B",
       "subtitle": "This is the subtitle",
-      "description": "This is the description",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur ipsam ratione quas! Similique exercitationem commodi sed deserunt velit, suscipit quas, eveniet, nihil quaerat dicta incidunt reprehenderit a dolorum hic.",
       "imgUrl": "/placeholder2.jpeg",
       "pageUrl": ""
     }

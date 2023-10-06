@@ -9,7 +9,7 @@ export function Project({ project }: ProjectProps) {
   return (
     <PageContainer>
       <ProjectHeading project={project} />
-      <ProjectBody />
+      <ProjectBody project={project} />
     </PageContainer>
   );
 }
