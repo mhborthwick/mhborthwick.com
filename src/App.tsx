@@ -8,6 +8,11 @@ function getProjectById(id: number): Project {
   return projects.find((p) => p.id === id)!;
 }
 
+const myProjects = {
+  portfolio: getProjectById(1),
+  positiveCli: getProjectById(2),
+};
+
 function App() {
   return (
     <Router>
@@ -16,8 +21,12 @@ function App() {
           <Route path="/" element={<Home projects={projects} />} />
           <Route path="/other" element={<Other />} />
           <Route
-            path="/projects/portfolio"
-            element={<ProjectPage project={getProjectById(1)} />}
+            path={myProjects.portfolio.pageUrl}
+            element={<ProjectPage project={myProjects.portfolio} />}
+          />
+          <Route
+            path={myProjects.positiveCli.pageUrl}
+            element={<ProjectPage project={myProjects.positiveCli} />}
           />
         </Routes>
       </Layout>
