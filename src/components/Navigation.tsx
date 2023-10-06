@@ -3,7 +3,9 @@ export function Navigation() {
     <header className="flex justify-between items-baseline mt-12 mb-24">
       <a href="/">
         <h1 className="text-3xl font-bold underline">Mike Borthwick</h1>
-        <p>Software Engineer \\ Portland, OR</p>
+        <p className="leading-loose font-semibold text-stone-600">
+          Software Engineer \\ Portland, OR
+        </p>
       </a>
       <nav>
         <a href="/">Home</a>

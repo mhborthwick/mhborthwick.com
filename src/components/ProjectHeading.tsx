@@ -12,11 +12,13 @@ export function ProjectHeading({ project }: ProjectHeadingProps) {
         className="w-full aspect-[4/3] object-cover"
         src={project.imgUrl}
       />
-      <div className="my-2 md:absolute md:text-white md:m-4">
-        <motion.h2 className="text-4xl md:text-6xl font-bold">
+      <div className="my-2 md:absolute md:m-4">
+        <motion.h2 className="text-4xl md:text-6xl font-bold md:text-white">
           {project.title}
         </motion.h2>
-        <motion.div className="text-sm">{project.subtitle}</motion.div>
+        <motion.div className="leading-loose font-semibold text-stone-600 md:text-white">
+          {project.subtitle}
+        </motion.div>
       </div>
     </div>
   );
