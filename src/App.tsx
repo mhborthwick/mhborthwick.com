@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Other, Project as ProjectPage } from "./pages";
-import { Layout } from "./components";
+import React from "react";
+import { useLocation, useRoutes } from "react-router-dom";
+import { Home, Project as ProjectPage } from "./pages";
 import { projects } from "./assets/projects.json";
 import { Project } from "./interfaces";
+import { Layout } from "./components";
 
 function getProjectById(id: number): Project {
   return projects.find((p) => p.id === id)!;
@@ -14,23 +15,27 @@ const myProjects = {
 };
 
 function App() {
+  const element = useRoutes([
+    {
+      path: "/",
+      element: <Home projects={projects} />,
+    },
+    {
+      path: myProjects.portfolio.pageUrl,
+      element: <ProjectPage project={myProjects.portfolio} />,
+    },
+    {
+      path: myProjects.positiveCli.pageUrl,
+      element: <ProjectPage project={myProjects.positiveCli} />,
+    },
+  ]);
+
+  const location = useLocation();
+
+  if (!element) return null;
+
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home projects={projects} />} />
-          <Route path="/other" element={<Other />} />
-          <Route
-            path={myProjects.portfolio.pageUrl}
-            element={<ProjectPage project={myProjects.portfolio} />}
-          />
-          <Route
-            path={myProjects.positiveCli.pageUrl}
-            element={<ProjectPage project={myProjects.positiveCli} />}
-          />
-        </Routes>
-      </Layout>
-    </Router>
+    <Layout>{React.cloneElement(element, { key: location.pathname })}</Layout>
   );
 }
 

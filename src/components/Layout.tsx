@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import { Navigation } from "./Navigation";
 
 interface LayoutProps {
@@ -8,7 +9,13 @@ export function Layout({ children }: LayoutProps) {
   return (
     <div className="mx-16 my-8">
       <Navigation />
-      {children}
+      <AnimatePresence
+        mode="wait"
+        // initial={false}
+        // onExitComplete={() => console.log("exited")}
+      >
+        {children}
+      </AnimatePresence>
     </div>
   );
 }

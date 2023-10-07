@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 export function Navigation() {
   return (
     <header className="flex justify-between items-baseline mt-12 mb-24">
-      <a href="/">
+      <Link to="/">
         <h1 className="text-3xl font-bold underline">Mike Borthwick</h1>
         <p className="leading-loose font-semibold text-stone-600">
           Software Engineer \\ Portland, OR
         </p>
-      </a>
+      </Link>
       <nav>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </nav>
     </header>
   );

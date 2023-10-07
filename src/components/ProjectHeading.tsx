@@ -9,6 +9,7 @@ export function ProjectHeading({ project }: ProjectHeadingProps) {
   return (
     <div className="relative md:flex md:items-start md:justify-start">
       <motion.img
+        layoutId={`project-image-container-${project.id}`}
         className="w-full aspect-[4/3] object-cover"
         src={project.imgUrl}
       />
