@@ -19,11 +19,11 @@ export function ProjectGridItem({ project }: ProjectGridItemProps) {
         ></motion.div>
       </Link>
       <Link to={project.pageUrl}>
-        <div className="text-2xl font-bold">{project.title}</div>
+        <div className="text-2xl font-bold">{project.heading}</div>
       </Link>
       <Link to={project.pageUrl}>
         <div className="leading-loose font-semibold text-stone-600">
-          {project.subtitle}
+          {project.subHeading}
         </div>
       </Link>
     </div>

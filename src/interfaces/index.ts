@@ -1,7 +1,7 @@
 export interface Project {
   id: number;
-  title: string;
-  subtitle: string;
+  heading: string;
+  subHeading: string;
   description: string;
   imgUrl: string;
   pageUrl: string;
