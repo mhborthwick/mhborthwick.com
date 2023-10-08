@@ -77,7 +77,7 @@ export function ProjectHeading({ project }: ProjectHeadingProps) {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="leading-loose font-semibold text-stone-600 md:text-white"
+          className="md:leading-loose font-semibold text-stone-600 md:text-white"
         >
           {project.subHeading}
         </motion.div>

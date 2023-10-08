@@ -12,17 +12,17 @@ export function ProjectGridItem({ project }: ProjectGridItemProps) {
       <Link to={project.pageUrl}>
         <motion.div
           layoutId={`project-image-container-${project.id}`}
-          className="w-full h-full bg-cover bg-center bg-no-repeat before:block before:content-[''] before:pt-[66.66%]"
+          className="w-full h-full bg-cover bg-center bg-no-repeat before:block before:content-[''] before:pt-[66.66%] mb-4"
           style={{
             backgroundImage: `url(${project.imgUrl})`,
           }}
         ></motion.div>
       </Link>
       <Link to={project.pageUrl}>
-        <div className="text-2xl font-bold">{project.heading}</div>
+        <div className="text-xl md:text-2xl font-bold">{project.heading}</div>
       </Link>
       <Link to={project.pageUrl}>
-        <div className="leading-loose font-semibold text-stone-600">
+        <div className="md:leading-loose font-semibold text-stone-600">
           {project.subHeading}
         </div>
       </Link>
