@@ -2,11 +2,12 @@
   "projects": [
     {
       "id": 1,
-      "heading": "Project A",
-      "subHeading": "This is the subtitle",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur ipsam ratione quas! Similique exercitationem commodi sed deserunt velit, suscipit quas, eveniet, nihil quaerat dicta incidunt reprehenderit a dolorum hic.",
+      "heading": "My Portfolio",
+      "subHeading": "The source of this website.",
+      "description": "A static website to share my personal projects, built using modern web develoment technologies including React, Vite, Tailwind, and Framer Motion. Deployed on AWS S3 using Terraform.",
       "imgUrl": "/placeholder.jpeg",
-      "pageUrl": "/projects/portfolio"
+      "pageUrl": "/projects/portfolio",
+      "gitHubUrl": "https://github.com/mhborthwick/mhborthwick.com"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "subHeading": "This is the subtitle",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur ipsam ratione quas! Similique exercitationem commodi sed deserunt velit, suscipit quas, eveniet, nihil quaerat dicta incidunt reprehenderit a dolorum hic.",
       "imgUrl": "/placeholder2.jpeg",
-      "pageUrl": "/projects/positive-cli"
+      "pageUrl": "/projects/positive-cli",
+      "gitHubUrl": ""
     }
   ]
 }

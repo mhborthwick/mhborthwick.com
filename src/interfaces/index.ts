@@ -5,4 +5,5 @@ export interface Project {
   description: string;
   imgUrl: string;
   pageUrl: string;
+  gitHubUrl: string;
 }
