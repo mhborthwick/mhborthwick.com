@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="mx-16 my-8">
+    <div className="mx-10 my-8 md:mx-16">
       <Navigation />
       <AnimatePresence
         mode="wait"
