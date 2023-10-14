@@ -12,6 +12,8 @@ function getProjectById(id: number): Project {
 const myProjects = {
   portfolio: getProjectById(1),
   positiveCli: getProjectById(2),
+  someOtherProject: getProjectById(3),
+  anotherProject: getProjectById(4),
 };
 
 function App() {
@@ -27,6 +29,14 @@ function App() {
     {
       path: myProjects.positiveCli.pageUrl,
       element: <ProjectPage project={myProjects.positiveCli} />,
+    },
+    {
+      path: myProjects.someOtherProject.pageUrl,
+      element: <ProjectPage project={myProjects.someOtherProject} />,
+    },
+    {
+      path: myProjects.anotherProject.pageUrl,
+      element: <ProjectPage project={myProjects.anotherProject} />,
     },
   ]);
 
