@@ -41,6 +41,7 @@ export function ProjectBody({ project }: ProjectBodyProps) {
           className="text-indigo-700 hover:text-indigo-500 focus:text-indigo-500 duration-300 ease-in-out underline underline-offset-4"
           href={project.gitHubUrl}
           target="_blank"
+          rel="noreferrer"
         >{`GitHub ↗`}</a>
       )}
     </motion.div>
