@@ -38,11 +38,25 @@ export function ProjectBody({ project }: ProjectBodyProps) {
       {project.description}{" "}
       {project.gitHubUrl && (
         <a
-          className="text-indigo-700 hover:text-indigo-500 focus:text-indigo-500 duration-300 ease-in-out underline underline-offset-4"
+          className="text-indigo-700 hover:text-indigo-500 focus:text-indigo-500 duration-300 ease-in-out"
           href={project.gitHubUrl}
           target="_blank"
           rel="noreferrer"
-        >{`GitHub ↗`}</a>
+        >
+          <span className="underline underline-offset-4">GitHub</span>{" "}
+          <span className="no-underline">↗</span>
+        </a>
+      )}{" "}
+      {project.demoUrl && (
+        <a
+          className="text-indigo-700 hover:text-indigo-500 focus:text-indigo-500 duration-300 ease-in-out"
+          href={project.demoUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="underline underline-offset-4">Demo</span>{" "}
+          <span className="no-underline">↗</span>
+        </a>
       )}
     </motion.div>
   );

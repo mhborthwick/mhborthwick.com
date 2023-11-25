@@ -11,9 +11,10 @@ function getProjectById(id: number): Project {
 
 const myProjects = {
   portfolio: getProjectById(1),
-  positiveCli: getProjectById(2),
-  someOtherProject: getProjectById(3),
-  anotherProject: getProjectById(4),
+  campfireCli: getProjectById(2),
+  connectFour: getProjectById(3),
+  loremIntl: getProjectById(4),
+  songBook: getProjectById(5),
 };
 
 function App() {
@@ -27,16 +28,20 @@ function App() {
       element: <ProjectPage project={myProjects.portfolio} />,
     },
     {
-      path: myProjects.positiveCli.pageUrl,
-      element: <ProjectPage project={myProjects.positiveCli} />,
+      path: myProjects.campfireCli.pageUrl,
+      element: <ProjectPage project={myProjects.campfireCli} />,
     },
     {
-      path: myProjects.someOtherProject.pageUrl,
-      element: <ProjectPage project={myProjects.someOtherProject} />,
+      path: myProjects.connectFour.pageUrl,
+      element: <ProjectPage project={myProjects.connectFour} />,
     },
     {
-      path: myProjects.anotherProject.pageUrl,
-      element: <ProjectPage project={myProjects.anotherProject} />,
+      path: myProjects.loremIntl.pageUrl,
+      element: <ProjectPage project={myProjects.loremIntl} />,
+    },
+    {
+      path: myProjects.songBook.pageUrl,
+      element: <ProjectPage project={myProjects.songBook} />,
     },
   ]);
 
