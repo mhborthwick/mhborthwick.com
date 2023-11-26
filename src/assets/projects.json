@@ -4,7 +4,7 @@
       "id": 1,
       "heading": "My Portfolio",
       "subHeading": "The source of this website.",
-      "description": "A static website for sharing my personal projects. Built using React, Vite, Tailwind, and Framer Motion. Deployed on AWS S3 using Terraform.",
+      "description": "A static website for sharing my personal projects. Built using React, Vite, Tailwind, and Framer Motion.",
       "imgUrl": "/portfolio.jpeg",
       "pageUrl": "/projects/portfolio",
       "gitHubUrl": "https://github.com/mhborthwick/mhborthwick.com",
@@ -28,7 +28,7 @@
       "imgUrl": "/connect4.jpeg",
       "pageUrl": "/projects/connect4",
       "gitHubUrl": "https://github.com/mhborthwick/connect4",
-      "demoUrl": ""
+      "demoUrl": "https://mhborthwick.github.io/connect4/"
     },
     {
       "id": 4,
