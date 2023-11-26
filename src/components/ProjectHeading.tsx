@@ -59,7 +59,7 @@ export function ProjectHeading({ project }: ProjectHeadingProps) {
     <div className="relative md:flex md:items-start md:justify-start">
       <motion.img
         layoutId={`project-image-container-${project.id}`}
-        className="w-full aspect-[4/3] object-cover"
+        className="w-full aspect-[4/3] object-cover brightness-50"
         src={project.imgUrl}
       />
       <div className="my-2 md:absolute md:m-4">

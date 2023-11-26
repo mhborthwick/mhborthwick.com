@@ -5,7 +5,7 @@
       "heading": "My Portfolio",
       "subHeading": "The source of this website.",
       "description": "A static website for sharing my personal projects. Built React, Vite, Tailwind, and Framer Motion. Deployed on AWS S3 using Terraform.",
-      "imgUrl": "/placeholder.jpeg",
+      "imgUrl": "/portfolio.jpeg",
       "pageUrl": "/projects/portfolio",
       "gitHubUrl": "https://github.com/mhborthwick/mhborthwick.com",
       "demoUrl": ""
@@ -15,7 +15,7 @@
       "heading": "Campfire CLI",
       "subHeading": "Create a campfire in your terminal.",
       "description": "A (command-line tool) CLI that lets you create a campfire (with optional campfire soundscapes) in your terminal. Built using Python and Typer.",
-      "imgUrl": "/placeholder2.jpeg",
+      "imgUrl": "/campfire.gif",
       "pageUrl": "/projects/positive-cli",
       "gitHubUrl": "https://github.com/mhborthwick/campfire-cli",
       "demoUrl": ""
@@ -24,9 +24,9 @@
       "id": 3,
       "heading": "Connect Four",
       "subHeading": "A Connect Four implementation in TypeScript.",
-      "description": "A simple Connect Four implementation in TypeScript for local gameplay.",
-      "imgUrl": "/placeholder2.jpeg",
-      "pageUrl": "/projects/connect-four",
+      "description": "A Connect Four implementation in TypeScript for local gameplay.",
+      "imgUrl": "/connect4.jpeg",
+      "pageUrl": "/projects/connect4",
       "gitHubUrl": "https://github.com/mhborthwick/connect4",
       "demoUrl": ""
     },
@@ -35,7 +35,7 @@
       "heading": "Lorem INTL",
       "subHeading": "Quickly add Lorem Ipsum text in multiple languages.",
       "description": "An NPM package that lets you quickly add Lorem Ipsum text in multiple languages for testing and prototyping.",
-      "imgUrl": "/placeholder.jpeg",
+      "imgUrl": "/lorem.jpeg",
       "pageUrl": "/projects/lorem-intl",
       "gitHubUrl": "https://github.com/mhborthwick/lorem-intl",
       "demoUrl": ""
@@ -45,7 +45,7 @@
       "heading": "Songbook",
       "subHeading": "A platform for sharing your favorite songs.",
       "description": "A full-stack web app where users can listen to songs and share their favorite tracks for future visitors. Built using Next.js, Express, React, Zod, and MongoDB.",
-      "imgUrl": "/placeholder.jpeg",
+      "imgUrl": "/songbook.jpeg",
       "pageUrl": "/projects/songbook",
       "gitHubUrl": "https://github.com/mhborthwick/songbook",
       "demoUrl": "https://songbook.up.railway.app/"
