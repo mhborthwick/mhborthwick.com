@@ -43,7 +43,7 @@ export function ProjectBody({ project }: ProjectBodyProps) {
           target="_blank"
           rel="noreferrer"
         >
-          <span className="underline underline-offset-4">GitHub</span>{" "}
+          <span className="underline underline-offset-4">Source</span>{" "}
           <span className="no-underline">↗</span>
         </a>
       )}{" "}

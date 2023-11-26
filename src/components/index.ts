@@ -7,3 +7,4 @@ export * from "./ProjectBody";
 export * from "./ProjectHeading";
 export * from "./Layout";
 export * from "./ScrollToTop";
+export * from "./Footer";

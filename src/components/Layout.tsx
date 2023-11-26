@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import { Navigation } from "./Navigation";
 import { ScrollToTop } from "./ScrollToTop";
+import { Footer } from "./Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -18,6 +19,7 @@ export function Layout({ children }: LayoutProps) {
       >
         {children}
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

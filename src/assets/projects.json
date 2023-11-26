@@ -4,7 +4,7 @@
       "id": 1,
       "heading": "My Portfolio",
       "subHeading": "The source of this website.",
-      "description": "A static website for sharing my personal projects. Built React, Vite, Tailwind, and Framer Motion. Deployed on AWS S3 using Terraform.",
+      "description": "A static website for sharing my personal projects. Built using React, Vite, Tailwind, and Framer Motion. Deployed on AWS S3 using Terraform.",
       "imgUrl": "/portfolio.jpeg",
       "pageUrl": "/projects/portfolio",
       "gitHubUrl": "https://github.com/mhborthwick/mhborthwick.com",
